@@ -1,1 +1,52 @@
 index.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kuis Terminologi Kedokteran FK UHO</title>
+
+<link rel="manifest" href="manifest.json">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:900px;
+margin:auto;
+padding:20px;
+background:#f5f5f5;
+}
+
+.card{
+background:white;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 5px rgba(0,0,0,.1);
+}
+
+button{
+padding:12px;
+width:100%;
+background:#1565c0;
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+}
+</style>
+</head>
+<body>
+
+<h1>Kuis Terminologi Kedokteran & Anatomi</h1>
+
+<div id="quiz"></div>
+
+<button onclick="submitQuiz()">Selesai</button>
+
+<h2 id="result"></h2>
+
+<script>
+
+const questions = [
